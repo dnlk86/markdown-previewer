@@ -1,11 +1,21 @@
 .App {
-    text-align: center;
-}
-
-.App-header {
+    min-width: 100vw;
     min-height: 100vh;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.editor {
+    border: 3px solid slateblue;
+    width: 600px;
+    height: 600px;
+}
+
+.previewer {
+    border: 3px solid salmon;
+    width: 600px;
+    height: 600px;
 }

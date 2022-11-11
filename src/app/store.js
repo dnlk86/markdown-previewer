@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import previewerReducer from '../features/previewer/previewerSlice';
+import editorReducer from '../features/editor/EditorSlice';
 
 export const store = configureStore({
   reducer: {
-    previewer: previewerReducer,
+    editor: editorReducer,
   },
 });
