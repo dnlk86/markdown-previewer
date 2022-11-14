@@ -1,5 +1,9 @@
+.previewerContainer {
+    border: 3px solid salmon;
+    width: 600px;
+    height: 600px;
+}
+
 .previewer {
-    width: 100%;
-    height: 100%;
-    /* background-color: salmon; */
+    text-align: left;
 }
