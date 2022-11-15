@@ -1,21 +1,66 @@
 .App {
-    min-width: 100vw;
-    min-height: 100vh;
     text-align: center;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
 }
 
-/* .editor {
-    border: 3px solid slateblue;
-    width: 600px;
-    height: 600px;
-} */
+#editorContainer {
+    /* border: 3px solid slateblue; */
+    /* padding: 10px; */
+    width: 50%;
+    min-width: 300px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--section-background);
+}
 
-/* .previewer {
-    border: 3px solid salmon;
-    width: 600px;
-    height: 600px;
-} */
+#previewContainer {
+    /* border: 3px solid salmon; */
+    /* padding: 10px; */
+    flex: 1 1 0%;
+    min-width: 300px;
+    height: 100vh;
+    background-color: var(--section-background);
+}
+
+.headers {
+    background-color: #303030;
+    height: 80px;
+}
+
+#previewContainer > .headers {
+    font-family: "Pacifico", cursive;
+    font-size: 3em;
+    letter-spacing: 2px;
+    color: var(--previewer-orange);
+}
+
+#editorContainer > .headers {
+    padding-top: 30px;
+    font-family: "Press Start 2P", cursive;
+    color: var(--editor-green);
+}
+
+#divider {
+    height: 100vh;
+    width: 12px;
+    background-image: repeating-linear-gradient(
+        -45deg,
+        var(--barberpole-1),
+        var(--barberpole-1) 2rem,
+        var(--barberpole-2) 2rem,
+        var(--barberpole-2) 4rem
+    );
+    background-size: 1000% 1000%;
+    animation: barberpole 120s linear infinite;
+}
+
+#divider:hover {
+    cursor: pointer;
+}
+
+@keyframes barberpole {
+    100% {
+        background-position: 100% 100%;
+    }
+}

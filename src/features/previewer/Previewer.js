@@ -15,8 +15,8 @@ export function Previewer() {
     const html = marked.parse(text);
 
     return (
-        <div className={styles.previewerContainer}>
-            <h1>Previewer</h1>
+        <div id="previewContainer">
+            <h1 className="headers">Previewer</h1>
             <div
                 id="preview"
                 className={styles.previewer}

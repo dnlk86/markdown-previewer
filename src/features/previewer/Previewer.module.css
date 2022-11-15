@@ -1,19 +1,8 @@
-.previewerContainer {
-    position: relative;
-    border: 3px solid salmon;
-    width: 600px;
-    height: 600px;
-}
-
 .previewer {
-    position: absolute;
+    width: auto;
     text-align: left;
-    /* overflow-x: hidden; */
-    /* overflow-y: scroll; */
     overflow: auto;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 94%;
-    border: 3px solid yellowgreen;
+    padding: 10px;
+    font-family: "Sono", sans-serif;
+    font-size: 1.5rem;
 }
