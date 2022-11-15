@@ -1,21 +1,31 @@
 .App {
-    min-width: 100vw;
-    min-height: 100vh;
     text-align: center;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
 }
 
-/* .editor {
-    border: 3px solid slateblue;
-    width: 600px;
-    height: 600px;
-} */
+#divider {
+    background-color: silver;
+    height: 100vh;
+    width: 10px;
+}
 
-/* .previewer {
+#editorContainer {
+    position: relative;
+    border: 3px solid slateblue;
+    width: 49%;
+    min-width: 200px;
+    height: 100vh;
+    padding: 10px;
+}
+
+#previewContainer {
     border: 3px solid salmon;
-    width: 600px;
-    height: 600px;
-} */
+    flex: 1 1 0%;
+    min-width: 200px;
+    height: 100vh;
+    padding: 10px;
+}
+
+h1 {
+    background-color: silver;
+}

@@ -8,7 +8,7 @@ export function Editor() {
     // const [editorText, setEditorText] = useState("");
 
     return (
-        <div className={styles.editorContainer}>
+        <div id="editorContainer">
             <h1>Editor</h1>
             <textarea
                 id="editor"
