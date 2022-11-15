@@ -16,7 +16,7 @@ export function Previewer() {
 
     return (
         <div id="previewContainer">
-            <h1>Preview</h1>
+            <h1 className="headers">Previewer</h1>
             <div
                 id="preview"
                 className={styles.previewer}

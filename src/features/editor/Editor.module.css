@@ -1,9 +1,15 @@
 .editor {
-    position: absolute;
-    display: block;
+    margin: 10px;
     resize: none;
     overflow: auto;
-    width: 98%;
-    height: 93%;
     border: none;
+    flex: 1;
+    font-family: "Sono", sans-serif;
+    font-size: 1.5rem;
+    background-color: var(--section-background);
+}
+
+.editor:focus {
+    outline: 5px solid var(--editor-green);
+    border-radius: 3px;
 }

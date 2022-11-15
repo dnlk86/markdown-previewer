@@ -1,3 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Press+Start+2P&family=Sono&display=swap");
+
+:root {
+    --section-background: #d2d2d2;
+    --editor-green: #80b918;
+    --previewer-orange: #f88c10;
+    --barberpole-1: #202020;
+    --barberpole-2: #ffdd00;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;

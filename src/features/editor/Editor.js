@@ -9,7 +9,7 @@ export function Editor() {
 
     return (
         <div id="editorContainer">
-            <h1>Editor</h1>
+            <h1 className="headers">Editor</h1>
             <textarea
                 id="editor"
                 className={styles.editor}
