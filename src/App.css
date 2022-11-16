@@ -1,11 +1,8 @@
 .App {
-    text-align: center;
     display: flex;
 }
 
 #editorContainer {
-    /* border: 3px solid slateblue; */
-    /* padding: 10px; */
     width: 50%;
     min-width: 300px;
     height: 100vh;
@@ -15,17 +12,19 @@
 }
 
 #previewContainer {
-    /* border: 3px solid salmon; */
-    /* padding: 10px; */
     flex: 1 1 0%;
+    display: flex;
+    flex-direction: column;
     min-width: 300px;
     height: 100vh;
     background-color: var(--section-background);
 }
 
 .headers {
+    text-align: center;
     background-color: #303030;
     height: 80px;
+    border: none;
 }
 
 #previewContainer > .headers {
@@ -63,4 +62,29 @@
     100% {
         background-position: 100% 100%;
     }
+}
+
+#signatureContainer {
+    height: 50px;
+    width: 150px;
+    position: absolute;
+    background-color: var(--header-background);
+    bottom: 25px;
+    right: 25px;
+    border-radius: 15px;
+}
+
+#signatureContainer:hover {
+    border: 3px solid var(--editor-green);
+}
+
+#signatureContainer a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 15px;
+    font-family: "Press Start 2P", cursive;
+    color: var(--editor-green);
+    text-decoration: none;
 }

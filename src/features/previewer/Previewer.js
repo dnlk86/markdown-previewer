@@ -9,7 +9,6 @@ export function Previewer() {
 
     marked.use({
         breaks: true,
-        xhtml: true,
     });
 
     const html = marked.parse(text);

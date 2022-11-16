@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Press+Start+2P&family=Sono&display=swap");
 
 :root {
+    --header-background: #303030;
     --section-background: #d2d2d2;
     --editor-green: #80b918;
+    --editor-green-light: #d6f3a0;
     --previewer-orange: #f88c10;
+    --previewer-orange-light: #fcd6aa;
     --barberpole-1: #202020;
     --barberpole-2: #ffdd00;
 }
@@ -17,4 +20,64 @@
 body {
     min-width: 100vw;
     min-height: 100vh;
+}
+
+#preview h1,
+#preview h2,
+#preview h3,
+#preview h4,
+#preview h5,
+#preview h6 {
+    background-color: var(--previewer-orange);
+    border-bottom: 3px solid var(--header-background);
+    color: var(--header-background);
+}
+
+#preview code,
+#preview pre {
+    background: var(--previewer-orange-light);
+}
+
+#preview table {
+    background: var(--previewer-orange-light);
+}
+
+#preview th,
+#preview td {
+    border: 2px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+#preview ol,
+#preview ul {
+    margin: 25px;
+}
+#preview ol li {
+    margin-left: 30px;
+    padding: 10px;
+}
+
+#preview ul li {
+    padding: 0;
+}
+
+#preview br,
+#preview p {
+    line-height: 100px;
+}
+
+#preview img {
+    margin: 50px;
+}
+
+#preview a {
+    font-weight: 800;
+    color: var(--header-background);
+    background-color: var(--previewer-orange-light);
+}
+
+#preview a:hover {
+    color: var(--previewer-orange);
+    background-color: var(--header-background);
 }

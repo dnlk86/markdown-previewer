@@ -1,5 +1,5 @@
 .previewer {
-    width: auto;
+    flex: 1;
     text-align: left;
     overflow: auto;
     padding: 10px;

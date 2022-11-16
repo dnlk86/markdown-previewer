@@ -66,6 +66,14 @@ function App() {
             <Editor />
             <div id="divider"></div>
             <Previewer />
+            <div id="signatureContainer">
+                <a
+                    href="https://github.com/dnlk86/markdown-previewer"
+                    target={"_blank"}
+                >
+                    dnlk86
+                </a>
+            </div>
         </div>
     );
 }
